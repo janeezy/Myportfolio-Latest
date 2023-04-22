@@ -166,7 +166,7 @@ nav ul li {
 .styling-image {
 	border-radius: 1rem;
 	width: 220px;
-	margin-top: 0.87rem;
+	margin-top: 0rem;
 	padding: 1rem;
 	box-sizing: border-box;
 	box-shadow: #3f4846;
@@ -323,7 +323,7 @@ section#about.hero {
 	align-items: center;
 	justify-content: center;
 	box-sizing: border-box;
-	box-shadow: #3f4846;
+	box-shadow: #26a993;
 }
 
 /* project title */
@@ -340,11 +340,12 @@ section#about.hero {
 
 .project-container {
 	text-align: center;
-	width: 22.875rem;
+	width: 24.875rem;
 	min-height: 26rem;
-	height: 22.875rem;
+	height: 24.875rem;
 	margin: 0%;
 	padding: 1rem;
+	box-shadow: #4c6460;
 	box-sizing: border-box;
 	viewport-fit: contain;
 	position: static;
@@ -370,6 +371,7 @@ div.project-container .project-card {
 }
 
 .project-details {
+	margin-top: 2rem;
 	margin-bottom: var(--bottom-margin);
 	font-size: medium;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -391,8 +393,10 @@ div.project-container .project-card {
 }
 
 .contact h2 {
+	margin-top: 6rem;
+	margin-bottom: 4rem;
 	text-align: center;
-	margin-bottom: var(--bottom-margin-2);
+	/* margin-bottom: var(--bottom-margin-2); */
 	box-sizing: border-box;
 }
 
