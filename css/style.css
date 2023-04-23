@@ -264,7 +264,7 @@ section#about.hero {
 }
 
 .more-about p {
-	line-height: 2.4rem;
+	line-height: 2.3rem;
 	padding: 0.4rem;
 	font-family: Arial, Helvetica, sans-serif;
 	text-align: justify;
@@ -577,7 +577,7 @@ footer {
 
 	.more-about p {
 		text-align: justify;
-		line-height: 3rem;
+		line-height: 2.3rem;
 		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
 		white-space: normal;
 	}
