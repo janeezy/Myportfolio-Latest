@@ -17,7 +17,7 @@ const ul = document.querySelector('nav ul');
 const nav = document.querySelector('nav');
 
 burger.addEventListener('click', () => {
-	ul.classList.toggle('show');
+	ul.classList.toggle('close');
 });
 
 // Close hamburger menu when a link is clicked
@@ -38,4 +38,9 @@ navLink.forEach((link) =>
 const copyrightEl = document.getElementById('copyrightYear');
 copyrightEl.innerText = 'Copyright ' + new Date().getFullYear();
 
-//gets the button by ID from your HTML element
+const navigation = document.querySelector('.navigation');
+const toggleBtn = document.querySelector('.icon icon-card');
+
+toggleBtn.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+});
