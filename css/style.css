@@ -13,6 +13,7 @@
 		cursor: default;
 		background-size: cover;
 		position: absolute;
+		background-color: white;
 	}
 }
 
@@ -24,7 +25,7 @@
 	--bg-color: #fcfcfc;
 	--primary-color: #2b2b2d;
 	--secondary-color: #ff7235;
-	--primary-shadow: #7d7e80d9;
+	--primary-shadow: #7f807dd9;
 	--secondary-shadow: #a17a69;
 	--bottom-margin: 0.5rem;
 	--bottom-margin-2: 1rem;
@@ -34,7 +35,7 @@
 /* Variables end */
 
 .dark-mode {
-	background-color: #9c945836; /* Dark background color */
+	background-color: #dfcc818f; /* Dark background color */
 	color: #0d0d0d; /* Dark text color */
 }
 
@@ -55,7 +56,7 @@
 	height: 20px;
 	color: #141414;
 	border-radius: 10px;
-	background-color: #989838; /* Light toggle color */
+	background-color: #4d4d4a; /* Light toggle color */
 	cursor: pointer;
 	transition: background-color 0.3s;
 }
@@ -179,7 +180,7 @@ nav {
 	align-items: center;
 	justify-content: space-between;
 	padding: 1.5rem 3.5rem;
-	background-color: var(--bg-color);
+
 	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -267,8 +268,8 @@ section#about.hero {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 2.5rem;
-	max-width: 68.75rem;
+	gap: 9rem;
+	max-width: 78.75rem;
 	margin: auto;
 }
 .hero img {
@@ -280,7 +281,7 @@ section#about.hero {
 
 .bio {
 	width: 35rem;
-	padding: 0.625rem;
+	padding: 1rem;
 	border-radius: 6px;
 	box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 	box-sizing: border-box;
@@ -309,7 +310,6 @@ section#about.hero {
 
 /* styling section */
 .more-about {
-	background-color: var(--bg-color);
 	padding: 1rem 6rem;
 	color: #141414;
 }
@@ -362,7 +362,6 @@ section#about.hero {
 
 /* project  styling*/
 .projects {
-	background-color: var(--bg-color);
 	padding: 5px 0;
 	margin-top: 2rem;
 	box-sizing: border-box;
@@ -417,7 +416,7 @@ div.project-container .project-card {
 
 	max-width: 27rem;
 	min-height: 29rem;
-	box-shadow: #bcad76;
+	box-shadow: #c8ad67;
 	background-color: white;
 }
 /* adding box shadow to projects  */
@@ -549,7 +548,6 @@ div.project-container .project-card {
 }
 /* footer styling */
 footer {
-	background-color: var(--bg-color);
 	padding: 1.25rem;
 	text-align: center;
 	margin: 2rem 0 0;
@@ -686,7 +684,7 @@ footer {
 	font-weight: bolder;
 	overflow: hidden;
 	text-align: center;
-	color: #be9721e1;
+	color: #121211e1;
 }
 
 #animation:before {
@@ -719,7 +717,7 @@ footer {
 .review {
 	margin-bottom: 20px;
 	padding: 10px;
-	background-color: #ebede9;
+
 	border-radius: 5px;
 	justify-content: center;
 	align-items: center;
@@ -749,7 +747,7 @@ footer {
 	background-color: #e1d98e;
 	color: #1b1a1a;
 	border-radius: 10%;
-	border: #bcad76;
+	border: #c09b14;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -759,6 +757,7 @@ footer {
 	font-size: 16px;
 	cursor: pointer;
 	opacity: 0;
+	margin-bottom: -3rem;
 
 	animation: fade-in 1s ease forwards, shake 0.5s infinite;
 }
