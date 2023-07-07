@@ -112,6 +112,8 @@ a:hover {
 
 body {
 	font-family: var(--font-family);
+
+	box-shadow: #bcad76;
 }
 
 /* navigation styling  */
@@ -165,7 +167,7 @@ nav ul li {
 /* image styling */
 .styling-image {
 	border-radius: 1rem;
-	width: 220px;
+	width: 240px;
 	margin-top: 0rem;
 	padding: 1rem;
 	box-sizing: border-box;
@@ -310,7 +312,7 @@ section#about.hero {
 	margin-top: 2rem;
 	box-sizing: border-box;
 	border-radius: 15px;
-	box-shadow: #2d607e;
+	border: #bcad76;
 }
 
 .project-pic {
@@ -324,7 +326,7 @@ section#about.hero {
 	align-items: center;
 	justify-content: center;
 	box-sizing: border-box;
-	box-shadow: #26a993;
+	box-shadow: #bcad76;
 }
 
 /* project title */
@@ -346,7 +348,7 @@ section#about.hero {
 	height: 24.875rem;
 	margin: 0%;
 	padding: 1rem;
-	box-shadow: #4c6460;
+	box-shadow: #bcad76;
 	box-sizing: border-box;
 	viewport-fit: contain;
 	position: static;
@@ -355,9 +357,10 @@ section#about.hero {
 /* containers */
 div.project-container .project-card {
 	box-sizing: border-box;
-	background-color: #b8b12e5c;
+	background-color: #7878752b;
 	max-width: 27rem;
 	min-height: 29rem;
+	box-shadow: #bcad76;
 }
 /* adding box shadow to projects  */
 
@@ -365,6 +368,7 @@ div.project-container .project-card {
 	padding: 0.4rem;
 	box-sizing: border-box;
 	margin-top: 0.3rem;
+	box-shadow: #eeeef1;
 }
 
 .project-title {
@@ -384,7 +388,7 @@ div.project-container .project-card {
 	padding: 15px;
 	margin: 10px;
 	box-sizing: border-box;
-	background-color: hsla(120, 2%, 25%, 0.193);
+	background-color: hsla(77, 57%, 82%, 0.405);
 	position: relative;
 }
 
@@ -620,6 +624,7 @@ footer {
 #animation {
 	width: 800px;
 	height: 100px;
+	font-size: x-large;
 	position: relative;
 	font-weight: bolder;
 	overflow: hidden;
@@ -628,20 +633,24 @@ footer {
 }
 
 #animation:before {
-	content: 'Hi meet Jane Duru';
+	content: 'Hi, meet Jane Duru, Frontend Developer';
 	position: absolute;
 	top: 0;
+	margin-top: 10px;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	animation: slide 5s linear infinite;
+	animation: slide 8s linear infinite;
+	justify-content: center;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 @keyframes slide {
-	0% {
+	30% {
 		transform: translateX(100%);
 	}
 	100% {
-		transform: translateX(-100%);
+		transform: translateZ(-100%);
 	}
 }
