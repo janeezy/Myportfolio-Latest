@@ -611,3 +611,32 @@ footer {
 		box-sizing: border-box;
 	}
 }
+
+/*animation */
+#animation {
+	width: 200px;
+	height: 100px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	color: #be972192;
+}
+
+#animation:before {
+	content: 'Hi meet Jane Duru';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	animation: slide 5s linear infinite;
+}
+
+@keyframes slide {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
