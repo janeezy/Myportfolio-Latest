@@ -295,7 +295,8 @@ section#about.hero {
 	height: 11.25rem;
 }
 .icon-card {
-	background-color: #fff;
+	/*background-color: #fff;*/
+	background-color: #b8b12e5c;
 	border-radius: 11px;
 	box-shadow: 0 3px 10px var(--secondary-shadow);
 	padding: 20px;
@@ -309,7 +310,7 @@ section#about.hero {
 	margin-top: 2rem;
 	box-sizing: border-box;
 	border-radius: 15px;
-	box-shadow: #26a993;
+	box-shadow: #15dcbb;
 }
 
 .project-pic {
@@ -354,7 +355,7 @@ section#about.hero {
 /* containers */
 div.project-container .project-card {
 	box-sizing: border-box;
-
+	background-color: #b8b12e5c;
 	max-width: 25rem;
 	min-height: 28rem;
 }
