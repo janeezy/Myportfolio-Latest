@@ -1,5 +1,5 @@
 'use strict';
-// Your JavaScript code goes here
+
 var reviews = [
 	{
 		name: 'John Okafor',
@@ -17,30 +17,29 @@ var reviews = [
 			"The quality of Jane's work is outstanding. They have a great eye for design and their attention to detail is impressive. I am thrilled with the outcome of our collaboration.",
 	},
 	{
-		name: 'Sarah Anyawu',
+		name: 'Lorenzo Peterson',
 		testimonial:
 			'Working with Jane has been a fantastic experience. Her innovative ideas and problem-solving skills have contributed greatly to the success of our project. Highly recommended!',
 	},
 	{
 		name: 'David Wilson',
 		testimonial:
-			'Jane Duru is an exceptionally talented frontend developer. She has a deep understanding of user experience and create intuitive interfaces that captivate users. It was a pleasure working with Her.',
+			'Jane Duru is an exceptionally talented frontend developer. She has a deep understanding of user experience and creates intuitive interfaces that captivate users. It was a pleasure working with her.',
 	},
 	{
 		name: 'Emily Anderson',
 		testimonial:
-			"I'm incredibly impressed with Duru's expertise and professionalism. She consistently delivered high-quality work and went above and beyond to ensure our satisfaction. I highly recommend Her.",
+			"I'm incredibly impressed with Duru's expertise and professionalism. She consistently delivered high-quality work and went above and beyond to ensure our satisfaction. I highly recommend her.",
 	},
 	{
 		name: 'Michael Roberts',
 		testimonial:
-			'I have worked with many developers, but Jane stands out from the rest. She has a rare combination of technical skill, creativity, and excellent communication. It was a pleasure collaborating with Her.',
+			'I have worked with many developers, but Jane stands out from the rest. She has a rare combination of technical skill, creativity, and excellent communication. It was a pleasure collaborating with her.',
 	},
 ];
 
 function getRandomReview() {
-	var randomIndex = Math.floor(Math.random() * reviews.length);
-	return reviews[randomIndex];
+	return reviews[Math.floor(Math.random() * reviews.length)];
 }
 
 function displayReviews() {
@@ -61,7 +60,6 @@ function displayReviews() {
 
 displayReviews();
 
-// hire me button
 var hireMeButton = document.getElementById('hire-me-button');
 hireMeButton.addEventListener('click', function () {
 	window.location.href = 'tel:351920009647'; // Replace with your phone number

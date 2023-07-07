@@ -281,11 +281,12 @@ section#about.hero {
 }
 
 .bio {
-	width: 35rem;
+	width: 37rem;
 	padding: 1rem;
 	border-radius: 6px;
 	box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 	box-sizing: border-box;
+	color: #0d0d0d;
 }
 
 .bio h1 {
@@ -777,10 +778,10 @@ footer {
 		transform: translateX(0);
 	}
 	25% {
-		transform: translateX(-5px);
+		transform: translateX(5px);
 	}
 	50% {
-		transform: translateX(5px);
+		transform: translateX(-5px);
 	}
 	75% {
 		transform: translateX(-5px);
