@@ -310,7 +310,7 @@ section#about.hero {
 	margin-top: 2rem;
 	box-sizing: border-box;
 	border-radius: 15px;
-	box-shadow: #15dcbb;
+	box-shadow: #2d607e;
 }
 
 .project-pic {
@@ -356,8 +356,8 @@ section#about.hero {
 div.project-container .project-card {
 	box-sizing: border-box;
 	background-color: #b8b12e5c;
-	max-width: 25rem;
-	min-height: 28rem;
+	max-width: 27rem;
+	min-height: 29rem;
 }
 /* adding box shadow to projects  */
 
@@ -379,13 +379,16 @@ div.project-container .project-card {
 }
 
 .project-card {
-	background-color: #fff;
 	border-radius: 11px;
 	box-shadow: 0 3px 10px var(--primary-shadow);
 	padding: 15px;
 	margin: 10px;
 	box-sizing: border-box;
+	background-color: hsla(120, 2%, 25%, 0.193);
+	position: relative;
 }
+
+/* animation  */
 
 /* styling contact  */
 .contact {
@@ -615,9 +618,10 @@ footer {
 
 /*animation */
 #animation {
-	width: 200px;
+	width: 800px;
 	height: 100px;
 	position: relative;
+	font-weight: bolder;
 	overflow: hidden;
 	text-align: center;
 	color: #be972192;
