@@ -1,14 +1,4 @@
 'use script';
-// scroll to top functionality
-const scrollUp = document.querySelector('#scroll-up');
-
-scrollUp.addEventListener('click', () => {
-	window.scrollTo({
-		top: 0,
-		left: 0,
-		behavior: 'smooth',
-	});
-});
 
 // Nav hamburgerburger selections
 
@@ -20,7 +10,21 @@ burger.addEventListener('click', () => {
 	ul.classList.toggle('close');
 });
 
-// Close hamburger menu when a link is clicked
+// Get the burger menu element
+const burgerMenu = document.querySelector('#burger-menu');
+
+// Show the burger menu on mobile devices
+function showBurgerMenuOnMobile() {
+	if (window.innerWidth <= 868) {
+		burgerMenu.style.display = 'block';
+	} else {
+		burgerMenu.style.display = 'none';
+	}
+}
+
+// Call the function initially and whenever the window is resized
+showBurgerMenuOnMobile();
+window.addEventListener('resize', showBurgerMenuOnMobile);
 
 // Select nav links
 const navLink = document.querySelectorAll('.nav-link');
@@ -41,4 +45,21 @@ const toggleBtn = document.querySelector('.icon icon-card');
 
 toggleBtn.addEventListener('click', () => {
 	navigation.classList.toggle('open');
+});
+
+/*light mood styling */
+function toggleMode() {
+	var body = document.body;
+	body.classList.toggle('dark-mode');
+}
+
+// scroll to top functionality
+const scrollUp = document.querySelector('#scroll-up');
+
+scrollUp.addEventListener('click', () => {
+	window.scrollTo({
+		top: 0,
+		left: 0,
+		behavior: 'smooth',
+	});
 });

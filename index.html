@@ -12,9 +12,6 @@
 		<!-- logo link -->
 		<title>JD|FrontEnd Developer</title>
 		<!-- css link -->
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 		<link
 			rel="stylesheet"
@@ -49,6 +46,16 @@
 	<!-- header -->
 
 	<body>
+		<div class="toggle-container">
+			<input
+				type="checkbox"
+				id="toggle"
+				class="toggle"
+				onchange="toggleMode()" />
+			<label
+				for="toggle"
+				class="toggle-label"></label>
+		</div>
 		<div class="container">
 			<!-- navigation section -->
 			<nav>
@@ -594,6 +601,16 @@
 			</div>
 		</section>
 		<!-- end of section 3 Projects -->
+		<!-- Review section -->
+
+		<section class="review-section">
+			<h2 class="projects">Client Reviews</h2>
+			<div
+				class="projects"
+				id="reviews"></div>
+			<button id="hire-me-button">Hire Me</button>
+		</section>
+
 		<!-- body contact me section  -->
 		<section
 			class="contact"
@@ -742,5 +759,7 @@
 
 		<!-- linking script.js -->
 		<script src="script.js/script.js"></script>
+		<script src="./script.js/app2.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
 	</body>
 </html>
