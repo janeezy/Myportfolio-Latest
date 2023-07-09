@@ -2,40 +2,32 @@
 
 var reviews = [
 	{
-		name: 'John Okafor',
+		name: 'Client',
 		testimonial:
-			'Working with Miss Jane was an absolute pleasure. Her attention to detail and creativity in design really made a difference in our project. Highly recommended!',
+			' Jane  really made a difference in our project. Highly recommended!',
+	},
+
+	{
+		name: 'Recruiter',
+		testimonial:
+			" She delivered on on time.I recommend Miss Jane",
 	},
 	{
-		name: 'Chinaku Boyanu',
+		name: 'Company',
 		testimonial:
-			"I couldn't be happier with the work Miss E.A Jane Duru did for us. Their professionalism and expertise exceeded our expectations. I look forward to working together again.",
+			' Her problem-solving skills have contributed greatly to the success of our project. Highly recommended!',
 	},
 	{
-		name: 'Alex Johnson',
+		name: 'Client',
 		testimonial:
-			"The quality of Jane's work is outstanding. They have a great eye for design and their attention to detail is impressive. I am thrilled with the outcome of our collaboration.",
+			'Jane has a deep understanding of user experience and creates intuitive interfaces that captivate users.',
 	},
 	{
-		name: 'Lorenzo Peterson',
+		name: 'Recruiter',
 		testimonial:
-			'Working with Jane has been a fantastic experience. Her innovative ideas and problem-solving skills have contributed greatly to the success of our project. Highly recommended!',
+			" She delivered high-quality work and went above and beyond to ensure our satisfaction. I highly recommend her.",
 	},
-	{
-		name: 'David Wilson',
-		testimonial:
-			'Jane Duru is an exceptionally talented frontend developer. She has a deep understanding of user experience and creates intuitive interfaces that captivate users. It was a pleasure working with her.',
-	},
-	{
-		name: 'Emily Anderson',
-		testimonial:
-			"I'm incredibly impressed with Duru's expertise and professionalism. She consistently delivered high-quality work and went above and beyond to ensure our satisfaction. I highly recommend her.",
-	},
-	{
-		name: 'Michael Roberts',
-		testimonial:
-			'I have worked with many developers, but Jane stands out from the rest. She has a rare combination of technical skill, creativity, and excellent communication. It was a pleasure collaborating with her.',
-	},
+
 ];
 
 function getRandomReview() {

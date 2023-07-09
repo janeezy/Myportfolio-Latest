@@ -14,7 +14,8 @@
 		background-size: cover;
 		position: absolute;
 		background-color: white;
-		box-shadow: #111211;
+		box-shadow: #193f7c;
+
 	}
 }
 
@@ -23,11 +24,11 @@
 	--normal-font: 400;
 	--bold-font: 700;
 	--bolder-font: 900;
-	--bg-color: #fcfcfc;
-	--primary-color: #2b2b2d;
-	--secondary-color: #ff7235;
-	--primary-shadow: #7f807dd9;
-	--secondary-shadow: #a17a69;
+	--bg-color: #FFFFFF;
+	--primary-color: #151516;
+	--secondary-color: #ff72354d;
+	--primary-shadow: #8b8eaf;
+	--secondary-shadow: #52504f;
 	--bottom-margin: 0.5rem;
 	--bottom-margin-2: 1rem;
 	--line-height: 1.7rem;
@@ -36,8 +37,10 @@
 /* Variables end */
 
 .dark-mode {
-	background-color: #49401f4a; /* Dark background color */
-	color: #0d0d0d; /* Dark text color */
+	background-color: hsla(0, 0%, 2%, 0.502); /* Dark background color */
+	color: #ece8e8; /* Dark text color */
+	box-shadow: #15156946;
+
 }
 
 .toggle-container {
@@ -49,6 +52,7 @@
 
 .toggle {
 	display: none;
+
 }
 
 .toggle-label {
@@ -63,9 +67,10 @@
 }
 
 .toggle:checked + .toggle-label {
-	background-color: #aba8a8;
+	background-color: hsla(0, 0%, 9%, 0.369);
 	/* Dark toggle color */
-	color: #2a2929;
+	color: #0e0d0d;
+
 }
 
 .toggle-label::after {
@@ -84,8 +89,8 @@
 
 .toggle:checked + .toggle-label::after {
 	margin-left: 20px;
-	color: rgb(20, 20, 20);
-	background-color: #565454; /* Dark toggle knob color */
+	color: rgb(15, 13, 13);
+	background-color: #000000; /* Dark toggle knob color */
 }
 
 /* logo styling */
@@ -111,7 +116,7 @@
 }
 
 #h1-tag ::shadow {
-	color: bisque;
+	color: rgb(197, 195, 192);
 }
 /* paragraph styling */
 p {
@@ -120,6 +125,7 @@ p {
 	font-size: medium;
 	text-align: center;
 	align-content: center;
+
 }
 
 h2 {
@@ -168,9 +174,17 @@ a:hover {
 body {
 	font-family: var(--font-family);
 
-	box-shadow: #bcad76;
+	box-shadow: #50504e;
 }
 
+div.project-title #reviews {
+	flex-wrap: wrap;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	justify-self: center;
+}
 /* navigation styling  */
 nav {
 	position: sticky;
@@ -244,13 +258,14 @@ section#about.hero {
 
 .logo2 {
 	border-radius: 50%;
-	padding: 5rem;
-	width: 200%;
+	padding: 2rem;
+	width: 100%;
 	white-space: hidden;
 	margin: 0;
 	height: 25vh;
 	box-sizing: border-box;
 	box-shadow: inset rgb(21, 21, 21);
+	overflow: hidden;
 }
 
 .bio-title :hover {
@@ -447,9 +462,12 @@ div.project-container .project-card {
 	padding: 15px;
 	margin: 10px;
 	box-sizing: border-box;
-
+    background-color: #fff;
 	position: relative;
+
 }
+
+
 
 /* styling contact  */
 .contact {
@@ -530,7 +548,6 @@ div.project-container .project-card {
 	cursor: pointer;
 	background-color: #26a993;
 }
-
 /* styling for social media  */
 .socials {
 	display: flex;
@@ -545,8 +562,8 @@ div.project-container .project-card {
 	width: 2rem;
 	height: 2rem;
 	position: sticky;
-	margin: 2rem;
-	right: -1%;
+	margin: 1rem;
+	right: -5%;
 }
 /* footer styling */
 footer {
@@ -604,12 +621,19 @@ footer {
 		display: show;
 	}
 
+
+
 	.socials {
 		display: flex;
 		flex-direction: column;
 		position: fixed;
 		right: -6%;
 		bottom: 20%;
+	}
+	.socicon {
+		width: 1.5rem;
+		height: 1.5rem;
+		top: 0;
 	}
 
 	nav ul.show {
@@ -669,25 +693,8 @@ footer {
 	.copy {
 		margin: 0.887rem;
 	}
-	.scroll-up {
-		position: fixed;
-		right: -2%;
-		bottom: 3%;
-		box-sizing: border-box;
-	}
-}
-
+/* new styling */
 /*animation */
-#animation {
-	width: 800px;
-	height: 100px;
-	font-size: x-large;
-	position: relative;
-	font-weight: bolder;
-	overflow: hidden;
-	text-align: center;
-	color: #121211e1;
-}
 
 #animation:before {
 	content: 'Hi, meet Jane Duru, Frontend Developer';
@@ -696,8 +703,12 @@ footer {
 	margin-top: 10px;
 	left: 0;
 	width: 100%;
+	height: fit-content;
 	animation: slide 8s linear infinite;
-	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-self: center;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
 		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -716,18 +727,6 @@ footer {
 	background-color: #06460b;
 }
 
-.review {
-	margin-bottom: 20px;
-	padding: 10px;
-
-	border-radius: 5px;
-	justify-content: center;
-	align-items: center;
-	display: flex;
-	flex-direction: column;
-	color: #06460b;
-	box-sizing: border-box;
-}
 
 .review h3 {
 	margin-top: 0;
@@ -743,13 +742,107 @@ footer {
 	align-items: center;
 }
 
+
+#customers-feed {
+	color: #0ba832;
+	box-shadow: #343438;
+	padding: 30px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+
+.nav-item {
+	transform-style: preserve-3d;
+	transition: transform 0.3s;
+}
+
+.nav-item:hover {
+	transform: rotateX(45deg) translateY(-5px);
+}
+
+/* new code  */
+
+.heading {
+  font-size: 25px;
+  margin-right: 25px;
+}
+
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top: 10px;
+}
+
+.middle {
+  float: left;
+  width: 70%;
+  margin-top: 10px;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+
+}
+
+/* Individual bars */
+.bar-5 {width: 60%; height: 18px; background-color: #04AA6D;}
+.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+  .side, .middle {
+    width: 100%;
+  }
+  /* Hide the right column on small screens */
+  .right {
+    display: none;
+  }
+
+
+
+ button#hire-me-button.n{
+	padding: 14px ;
+	color: #ff9800;
+
+
+ }
+
 /* Styles for the "Hire Me" button */
 #hire-me-button {
 	padding: 10px 30px;
 	background-color: #e1d98e;
 	color: #1b1a1a;
 	border-radius: 10%;
-	border: #c09b14;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -759,7 +852,7 @@ footer {
 	font-size: 16px;
 	cursor: pointer;
 	opacity: 0;
-	margin-bottom: -3rem;
+	margin-top: 1rem;
 
 	animation: fade-in 1s ease forwards, shake 0.5s infinite;
 }
