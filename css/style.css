@@ -37,9 +37,9 @@
 /* Variables end */
 
 .dark-mode {
-	background-color: hsla(0, 0%, 2%, 0.502); /* Dark background color */
+	background-color: #2d2d2e43; /* Dark background color */
 	color: #ece8e8; /* Dark text color */
-	box-shadow: #15156946;
+	box-shadow: #54545646;
 
 }
 
@@ -59,17 +59,17 @@
 	display: block;
 	width: 40px;
 	height: 20px;
-	color: #141414;
+	color: #7e7c7c;
 	border-radius: 10px;
-	background-color: #4d4d4a; /* Light toggle color */
+	background-color: #737272; /* Light toggle color */
 	cursor: pointer;
 	transition: background-color 0.3s;
 }
 
 .toggle:checked + .toggle-label {
-	background-color: hsla(0, 0%, 9%, 0.369);
+	background-color: hsla(0, 0%, 42%, 0.369);
 	/* Dark toggle color */
-	color: #0e0d0d;
+	color: #626060;
 
 }
 
@@ -78,7 +78,7 @@
 	display: block;
 	width: 16px;
 	height: 16px;
-	color: rgb(7, 7, 7);
+	color: rgb(125, 123, 123);
 	border-radius: 50%;
 	background-color: #d7c379; /* Light toggle knob color */
 	margin-left: 4px;
@@ -589,10 +589,17 @@ footer {
 	bottom: 10%;
 }
 /* creating responsesiveness */
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 620px)  {
+
+
 	html {
+
 		cursor: pointer;
-	}
+
+
+
+		}
+
 	/*changes reflects on screen with a
 		width of 720px and below*/
 
@@ -696,35 +703,13 @@ footer {
 /* new styling */
 /*animation */
 
-#animation:before {
-	content: 'Hi, meet Jane Duru, Frontend Developer';
-	position: absolute;
-	top: 0;
-	margin-top: 10px;
-	left: 0;
-	width: 100%;
-	height: fit-content;
-	animation: slide 8s linear infinite;
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-	justify-self: center;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
 
-@keyframes slide {
-	30% {
-		transform: translateX(100%);
-	}
-	100% {
-		transform: translateZ(-100%);
-	}
-}
 
-* Styles for the review section */ .review-section {
+
+/* Styles for the review section */ .review-section  {
+	color: #06460b23;
 	padding: 20px;
-	background-color: #06460b;
+	background-color: #819d8346;
 }
 
 
@@ -733,14 +718,18 @@ footer {
 	margin: auto;
 	justify-content: center;
 	align-self: center;
+
 }
 
-.review p {
+.review {
 	margin: auto;
 	margin-bottom: 0;
 	justify-content: center;
 	align-items: center;
+	color: #06460b;
 }
+
+
 
 
 #customers-feed {
@@ -750,6 +739,52 @@ footer {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 
+}
+/* Styles for the "Hire Me" button */
+#hire-me-button {
+	padding: 20px 30px;
+	background-color: #e1d98e;
+	color: #1b1a1a;
+	border-radius: 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	justify-self: center;
+	margin: auto;
+	font-size: 16px;
+	cursor: pointer;
+	opacity: 0;
+	margin-top: 1rem;
+
+	animation: fade-in 1s ease forwards, shake 0.5s infinite;
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes shake {
+	0% {
+		transform: translateX(0);
+	}
+	25% {
+		transform: translateX(5px);
+	}
+	50% {
+		transform: translateX(-5px);
+	}
+	75% {
+		transform: translateX(-5px);
+	}
+	100% {
+		transform: translateX(0);
+	}
 }
 
 .nav-item {
@@ -804,9 +839,9 @@ footer {
 /* The bar container */
 .bar-container {
   width: 100%;
-  background-color: #f1f1f1;
+
   text-align: center;
-  color: white;
+  color: rgb(28, 28, 28);
 
 }
 
@@ -818,7 +853,7 @@ footer {
 .bar-1 {width: 15%; height: 18px; background-color: #f44336;}
 
 /* Responsive layout - make the columns stack on top of each other instead of next to each other */
-@media (max-width: 400px) {
+@media (max-width: 400px)  {
   .side, .middle {
     width: 100%;
   }
@@ -836,50 +871,3 @@ footer {
 
  }
 
-/* Styles for the "Hire Me" button */
-#hire-me-button {
-	padding: 10px 30px;
-	background-color: #e1d98e;
-	color: #1b1a1a;
-	border-radius: 10%;
-
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	justify-self: center;
-	margin: auto;
-	font-size: 16px;
-	cursor: pointer;
-	opacity: 0;
-	margin-top: 1rem;
-
-	animation: fade-in 1s ease forwards, shake 0.5s infinite;
-}
-
-@keyframes fade-in {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-@keyframes shake {
-	0% {
-		transform: translateX(0);
-	}
-	25% {
-		transform: translateX(5px);
-	}
-	50% {
-		transform: translateX(-5px);
-	}
-	75% {
-		transform: translateX(-5px);
-	}
-	100% {
-		transform: translateX(0);
-	}
-}
