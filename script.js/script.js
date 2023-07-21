@@ -11,19 +11,9 @@ function toggleMobileMenu() {
 }
 
 
-
-// Show or hide the mobile menu
-function toggleMobileMenu() {
-  ul.classList.toggle('show');
-}
-
-// Event listener for burger menu click
-burger.addEventListener('click', toggleMobileMenu);
-
-
 // Show the burger menu on mobile devices
 function showBurgerMenuOnMobile() {
-	burger.style.display = window.innerWidth <= 868 ? 'block' : 'show';
+	burger.style.display = window.innerWidth <= 868 ? 'block' : 'none';
 }
 
 // Scroll to top functionality

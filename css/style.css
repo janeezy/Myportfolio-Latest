@@ -629,14 +629,15 @@ nav ul {
 		width of 720px and below*/
 
 	ul.navigation {
+
 		display: contents;
+
 	}
 
 	nav {
 		padding: 1.5rem 1rem;
 		flex-wrap: wrap !important;
-		justify-content: center !important;
-		jus
+
 	}
 
 
