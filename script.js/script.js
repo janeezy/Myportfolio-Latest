@@ -10,16 +10,28 @@ function toggleMobileMenu() {
 	ul.classList.toggle('close');
 }
 
+
+
+// Show or hide the mobile menu
+function toggleMobileMenu() {
+  ul.classList.toggle('show');
+}
+
+// Event listener for burger menu click
+burger.addEventListener('click', toggleMobileMenu);
+
+
 // Show the burger menu on mobile devices
 function showBurgerMenuOnMobile() {
-	burger.style.display = window.innerWidth <= 868 ? 'block' : 'none';
+	burger.style.display = window.innerWidth <= 868 ? 'block' : 'show';
 }
 
 // Scroll to top functionality
 const scrollUp = document.querySelector('#scroll-up');
 
 // Event listeners
-burger.addEventListener('click', toggleMobileMenu);
+burger.addEventListener( 'click', toggleMobileMenu );
+ console.log('Show burger menu on mobile'); // For debugging
 window.addEventListener('resize', showBurgerMenuOnMobile);
 navLink.forEach((link) =>
 	link.addEventListener('click', () => ul.classList.remove('show'))

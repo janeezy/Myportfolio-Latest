@@ -1,6 +1,6 @@
 'use strict';
 
-var reviews = [
+const reviews = [
 	{
 		name: 'Client',
 		testimonial:
@@ -35,14 +35,14 @@ function getRandomReview() {
 }
 
 function displayReviews() {
-	var reviewsContainer = document.getElementById('reviews');
+	const reviewsContainer = document.getElementById('reviews');
 	reviewsContainer.innerHTML = '';
 
-	var numReviews = 5; // Number of reviews to display
+	const numReviews = 5; // Number of reviews to display
 
 	for (var i = 0; i < numReviews; i++) {
-		var review = getRandomReview();
-		var reviewElement = document.createElement('div');
+		const review = getRandomReview();
+		const reviewElement = document.createElement('div');
 		reviewElement.className = 'review';
 		reviewElement.innerHTML =
 			'<h3>' + review.name + '</h3><p>' + review.testimonial + '</p>';
@@ -52,7 +52,3 @@ function displayReviews() {
 
 displayReviews();
 
-var hireMeButton = document.getElementById('hire-me-button');
-hireMeButton.addEventListener('click', function () {
-	window.location.href = 'tel:351920009647'; // Replace with your phone number
-});
