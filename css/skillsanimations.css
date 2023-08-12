@@ -1,0 +1,53 @@
+/* Add this in your CSS */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fade-in 1s ease-in-out;
+}
+
+/* Add this in your CSS */
+.icon-card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon-card:hover {
+  transform: scale(1.1);
+}
+
+/* Add this in your CSS */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.icon-card.rotate {
+  animation: rotate 3s linear infinite;
+}
+
+/* Add this in your CSS */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.icon-card.pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
