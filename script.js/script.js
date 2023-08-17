@@ -57,3 +57,29 @@ const toggleBtn = document.querySelector('.icon.icon-card');
 toggleBtn.addEventListener('click', () => {
 	navigation.classList.toggle('open');
 });
+
+const projectsContainer = document.querySelector('.projects-container');
+const certificationsContainer = document.querySelector('.certifications-container');
+const reviewsContainer = document.querySelector('.reviews');
+
+function applyZoomInAnimation(element) {
+  element.style.animation = 'zoomIn 0.5s ease-in-out';
+  element.style.opacity = '1';
+}
+
+function applyZoomOutAnimation(element) {
+  element.style.animation = 'zoomOut 0.5s ease-in-out';
+  element.style.opacity = '0';
+}
+
+// Apply animations on initial load
+applyZoomInAnimation(projectsContainer);
+applyZoomInAnimation(certificationsContainer);
+applyZoomInAnimation(reviewsContainer);
+
+// Apply zoom-out animations on mobile screens
+if (window.innerWidth <= 767) {
+  applyZoomOutAnimation(projectsContainer);
+  applyZoomOutAnimation(certificationsContainer);
+  applyZoomOutAnimation(reviewsContainer);
+}

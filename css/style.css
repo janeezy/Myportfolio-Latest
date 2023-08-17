@@ -28,9 +28,9 @@
 	--bolder-font: 900;
 	--bg-color: #FFFFFF;
 	--primary-color: #0B192E;
-	--secondary-color: #714c3c4d;
+	--secondary-color: #9a360b4d;
 	--primary-shadow: #131d8a;
-	--secondary-shadow: #52504f;
+	--secondary-shadow: #604334;
 	--bottom-margin: 0.5rem;
 	--bottom-margin-2: 1rem;
 	--line-height: 1.7rem;
@@ -39,7 +39,7 @@
 /* Variables end */
 
 .dark-mode {
-	background-color: rgb(182,175,139); /* Dark background color */
+	background-color: rgba(164, 164, 59, 0.432); /* Dark background color */
 ; /* Dark background color */
 	color: #ece8e8; /* Dark text color */
 	box-shadow: #88888a46;
@@ -609,6 +609,7 @@ footer {
 @media screen and (max-width: 620px)  {
 
 
+
 	html {
 
 		cursor: pointer;
@@ -746,10 +747,10 @@ nav ul {
 
 .review {
 	margin: auto;
-	margin-bottom: 0;
 	justify-content: center;
 	align-items: center;
 	color: #06460b;
+	margin-bottom: 30px;
 }
 
 
@@ -760,27 +761,8 @@ nav ul {
 	box-shadow: #343438;
 	padding: 30px;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
 
-
-}
-/* Styles for the "Hire Me" button */
-.hire-me-button {
-	padding: 20px 30px;
-	background-color: #e1d98e;
-	color: #1b1a1a;
-	border-radius: 10%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	justify-self: center;
-	margin: auto;
-	font-size: 16px;
-	cursor: pointer;
-	opacity: 0;
-	margin-top: 1rem;
-
-	animation: fade-in 1s ease forwards, shake 0.5s infinite;
 }
 
 @keyframes fade-in {
@@ -968,8 +950,32 @@ nav ul {
 	100% {
 		transform: translateX(0);
 	}
+
 }
 
+/* Zoom-in animation */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Zoom-out animation */
+@keyframes zoomOut {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+}
 
 /* Add this CSS to your existing stylesheet */
 
@@ -980,3 +986,5 @@ nav ul {
 .project-card:hover {
   transform: scale(1.05); /* Zoom in on hover */
 }
+
+

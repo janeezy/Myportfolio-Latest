@@ -1,0 +1,61 @@
+/* Zoom-in animation */
+/* Zoom-in animation */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Zoom-out animation */
+@keyframes zoomOut {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0.8);
+    opacity: 0;
+
+  }
+}
+
+.articles-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+  margin-bottom: 30px ;
+}
+
+.article-card {
+  background-color: #9DBCBC;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  margin-top: 20px ;
+}
+
+.zoom-in {
+  animation: zoomIn 0.5s ease-in-out;
+}
+
+.zoom-out {
+  animation: zoomOut 0.5s ease-in-out;
+}
+
+
+h2 .articles-title {
+  margin-top: 30px ;
+}
+
+
+h2{
+  margin-top: 30px ;
+}
