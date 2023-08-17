@@ -1,37 +1,43 @@
 'use strict';
+'use strict';
 
 const reviews = [
 	{
-		name: 'Client',
+		name: 'Ngozi James',
 		testimonial:
-			' Jane  really made a difference in our project. Highly recommended!',
+			'Jane really made a difference in our project. Highly recommended!',
 	},
-
 	{
 		name: 'Recruiter',
 		testimonial:
-			" She delivered on on time.I recommend Miss Jane",
+			'She delivered on time. I recommend Miss Jane.',
 	},
 	{
-		name: 'Company',
+		name: 'Jether tech',
 		testimonial:
-			' Her problem-solving skills have contributed greatly to the success of our project. Highly recommended!',
+			'Her problem-solving skills have greatly contributed to the success of our project. Highly recommended!',
 	},
 	{
-		name: 'Client',
+		name: 'Williams',
 		testimonial:
 			'Jane has a deep understanding of user experience and creates intuitive interfaces that captivate users.',
 	},
 	{
-		name: 'Recruiter',
+		name: 'Peter brooks',
 		testimonial:
-			" She delivered high-quality work and went above and beyond to ensure our satisfaction. I highly recommend her.",
+			'She delivered high-quality work and went above and beyond to ensure our satisfaction. I highly recommend her.',
 	},
-
 ];
 
+const displayedReviews = new Set();
+
 function getRandomReview() {
-	return reviews[Math.floor(Math.random() * reviews.length)];
+	let randomReview = reviews[Math.floor(Math.random() * reviews.length)];
+	while (displayedReviews.has(randomReview)) {
+		randomReview = reviews[Math.floor(Math.random() * reviews.length)];
+	}
+	displayedReviews.add(randomReview);
+	return randomReview;
 }
 
 function displayReviews() {
@@ -40,7 +46,7 @@ function displayReviews() {
 
 	const numReviews = 5; // Number of reviews to display
 
-	for (var i = 0; i < numReviews; i++) {
+	for (let i = 0; i < numReviews; i++) {
 		const review = getRandomReview();
 		const reviewElement = document.createElement('div');
 		reviewElement.className = 'review';
@@ -51,4 +57,3 @@ function displayReviews() {
 }
 
 displayReviews();
-

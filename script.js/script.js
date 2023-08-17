@@ -3,7 +3,14 @@
 // Nav hamburger selections
 const burger = document.querySelector('#burger-menu');
 const ul = document.querySelector('nav ul');
-const navLink = document.querySelectorAll('.nav-link');
+const navLink = document.querySelectorAll( '.nav-link' );
+const burgerMenu = document.getElementById('burger-menu');
+const navList = document.querySelector('.navigation');
+
+burgerMenu.addEventListener('click', () => {
+  navList.classList.toggle('active');
+});
+
 
 // Show or hide the mobile menu
 function toggleMobileMenu() {

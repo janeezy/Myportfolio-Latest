@@ -1,0 +1,21 @@
+.project-container {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.project-container:hover {
+  transform: scale(1.05);
+}
+
+.project-container {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.project-container:hover {
+  transform: scale(1.05);
+}
+
+.project-container:not(:hover) {
+  transform: scale(1);
+}

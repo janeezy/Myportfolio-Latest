@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap');
 
 /* Variables */
+
 * {
 	margin: 0%;
 	padding: 0%;
@@ -18,6 +19,7 @@
 
 	}
 }
+
 
 :root {
 	--font-family: 'Roboto', sans-serf;
@@ -37,9 +39,10 @@
 /* Variables end */
 
 .dark-mode {
-	background-color: hsla(50, 92%, 20%, 0.457); /* Dark background color */
+	background-color: rgb(182,175,139); /* Dark background color */
+; /* Dark background color */
 	color: #ece8e8; /* Dark text color */
-	box-shadow: #d9d9e046;
+	box-shadow: #88888a46;
 
 }
 
@@ -59,17 +62,18 @@
 	display: block;
 	width: 40px;
 	height: 20px;
-	color: #7e7c7c;
+   color: #ece8e87b; /* Dark text color */
+;
 	border-radius: 10px;
-	background-color: #737272; /* Light toggle color */
+	background-color: #8c8888; /* Light toggle color */
 	cursor: pointer;
 	transition: background-color 0.3s;
 }
 
 .toggle:checked + .toggle-label {
-	background-color: hsla(0, 0%, 42%, 0.369);
+	background-color: hsla(0, 2%, 25%, 0.927);
 	/* Dark toggle color */
-	color: #626060;
+	color: #c9c2c2;
 
 }
 
@@ -224,6 +228,7 @@ nav a:hover {
 nav ul {
 	display: flex;
 	gap: 1.9rem;
+
 }
 
 nav ul li {
@@ -231,6 +236,7 @@ nav ul li {
 }
 
 /* burger menu styling for button  */
+
 .burger-menu {
 	color: var(--primary-color);
 	font-size: 2rem;
@@ -303,11 +309,14 @@ section#about.hero {
 
 .bio {
 	width: 37rem;
-	padding: 1rem;
-	border-radius: 6px;
+	padding: 1.5rem;
+	border-radius: 10px   ;
 	box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 	box-sizing: border-box;
 	color: #0d0d0d;
+
+
+
 }
 
 .bio h1 {
@@ -464,12 +473,12 @@ div.project-container .project-card {
 }
 
 .project-card {
-	border-radius: 11px;
+	border-radius: 31px;
 	box-shadow: 0 3px 10px var(--primary-shadow);
 	padding: 15px;
 	margin: 10px;
 	box-sizing: border-box;
-    background-color: #E5E3B8;
+    background-color: #e5e3b867;
 ;
 	position: relative;
 
@@ -959,4 +968,15 @@ nav ul {
 	100% {
 		transform: translateX(0);
 	}
+}
+
+
+/* Add this CSS to your existing stylesheet */
+
+.project-card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.05); /* Zoom in on hover */
 }
