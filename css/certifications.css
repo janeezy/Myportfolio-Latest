@@ -8,6 +8,7 @@
   flex-wrap: wrap;
   text-align: center;
   gap: 1px;
+  margin-bottom: 30px;
 
 }
 
@@ -24,14 +25,14 @@
 
 .certification-card:hover {
   transform: rotateY(16deg) scale(1.1);
-  background-color: rgb(161, 197, 134);
+  background-color: rgb(175, 187, 112);
 
   cursor: pointer;
   text-align: center;
 }
 
 .certifications-title {
-    margin-top: 20px ;
+    margin-top: 100px ;
 }
 
 /* other certifications  */

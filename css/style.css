@@ -26,11 +26,11 @@
 	--normal-font: 400;
 	--bold-font: 700;
 	--bolder-font: 900;
-	--bg-color: #FFFFFF;
-	--primary-color: #0B192E;
-	--secondary-color: #9a360b4d;
-	--primary-shadow: #131d8a;
-	--secondary-shadow: #604334;
+	--bg-color: #596408;
+	--primary-color: #0f0f0f;
+	--secondary-color: #9a360b;
+	--primary-shadow: #0a20cb;
+	--secondary-shadow: #596408;
 	--bottom-margin: 0.5rem;
 	--bottom-margin-2: 1rem;
 	--line-height: 1.7rem;
@@ -39,10 +39,10 @@
 /* Variables end */
 
 .dark-mode {
-	background-color: rgba(164, 164, 59, 0.432); /* Dark background color */
+	background-color: #D7D7AA   /* Dark background color */
 ; /* Dark background color */
-	color: #ece8e8; /* Dark text color */
-	box-shadow: #88888a46;
+	color: #333905; /* Dark text color */
+	box-shadow: #0f0fbe46;
 
 }
 
@@ -96,9 +96,7 @@
 	color: rgb(15, 13, 13);
 	background-color: #000000; /* Dark toggle knob color */
 }
-h3{
-	color: #052656;
-}
+
 /* logo styling */
 .logo1 :hover {
 	cursor: pointer;
@@ -132,7 +130,7 @@ p {
 	font-size: medium;
 	text-align: center;
 	align-content: center;
-	color: #052656;
+
 
 }
 
@@ -141,7 +139,7 @@ h2 {
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
 		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	text-align: center;
-	color: #052656;
+
 }
 
 h3.project-title {
@@ -186,14 +184,7 @@ body {
 	box-shadow: #50504e;
 }
 
-div.project-title #reviews {
-	flex-wrap: wrap;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	justify-self: center;
-}
+
 /* navigation styling  */
 nav {
 	position: sticky;
@@ -313,7 +304,7 @@ section#about.hero {
 	border-radius: 10px   ;
 	box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 	box-sizing: border-box;
-	color: #0d0d0d;
+
 
 
 
@@ -393,6 +384,7 @@ section#about.hero {
 	color: #141414;
 }
 
+
 /* project  styling*/
 .projects {
 	padding: 5px 0;
@@ -400,7 +392,7 @@ section#about.hero {
 	box-sizing: border-box;
 	border-radius: 15px;
 	border: #bcad76;
-	color: #0b7e26;
+
 }
 
 .project-pic {
@@ -490,7 +482,7 @@ div.project-container .project-card {
 .contact {
 	margin-top: 2rem;
 	box-sizing: border-box;
-	color: #141414;
+
 }
 
 .contact h2 {
@@ -508,7 +500,7 @@ div.project-container .project-card {
 	border-radius: 5px;
 	box-shadow: 0 3px 10px var(--secondary-shadow);
 	box-sizing: border-box;
-	color: #141414;
+
 }
 /* styling more on placeholder  */
 .contact-form-container label {
@@ -587,7 +579,7 @@ footer {
 	padding: 1.25rem;
 	text-align: center;
 	margin: 2rem 0 0;
-	color: #141414;
+
 }
 /* scroll up icon footer section */
 .scroll-up {
@@ -628,21 +620,22 @@ nav ul {
 	nav ul li {
 		margin: 8px;
 	}
+
+
 	.burger-menu {
-		display: show;
+		display: block;
+		background: none;
+		border: none;
+		cursor: pointer;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+
 	}
 
 
 		}
 
-	/*changes reflects on screen with a
-		width of 720px and below*/
-
-	ul.navigation {
-
-		display: contents;
-
-	}
 
 	nav {
 		padding: 1.5rem 1rem;
@@ -659,7 +652,8 @@ nav ul {
 		flex-direction: column;
 		position: fixed;
 		right: -6%;
-		bottom: 20%;
+		bottom: 10%;
+
 	}
 	.socicon {
 		width: 1.5rem;
@@ -672,13 +666,13 @@ nav ul {
 	}
 
 	.hero {
-		margin-top: 2rem;
+		margin-top: 4rem;
 		flex-direction: column;
 		gap: 0;
 	}
 
 	.hero img {
-		height: 37.5rem;
+		height: 30rem;
 		width: 30rem;
 	}
 
@@ -703,7 +697,7 @@ nav ul {
 	}
 
 	.icon {
-		width: 5.875rem;
+		width: 5.9rem;
 		height: 5.25rem;
 	}
 	.projects-container {
@@ -729,229 +723,6 @@ nav ul {
 
 
 
-
-/* Styles for the review section */ .review-section  {
-	color: #06460b23;
-	padding: 20px;
-	background-color: #2caa3546;
-}
-
-
-.review h3 {
-	margin-top: 0;
-	margin: auto;
-	justify-content: center;
-	align-self: center;
-
-}
-
-.review {
-	margin: auto;
-	justify-content: center;
-	align-items: center;
-	color: #06460b;
-	margin-bottom: 30px;
-}
-
-
-
-
-#customers-feed {
-	color: #0ba832;
-	box-shadow: #343438;
-	padding: 30px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 20px;
-
-}
-
-@keyframes fade-in {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-@keyframes shake {
-	0% {
-		transform: translateX(0);
-	}
-	25% {
-		transform: translateX(5px);
-	}
-	50% {
-		transform: translateX(-5px);
-	}
-	75% {
-		transform: translateX(-5px);
-	}
-	100% {
-		transform: translateX(0);
-	}
-}
-
-.nav-item {
-	transform-style: preserve-3d;
-	transition: transform 0.3s;
-}
-
-.nav-item:hover {
-	transform: rotateX(45deg) translateY(-5px);
-}
-
-/* new code  */
-
-.heading {
-  font-size: 25px;
-  margin-right: 25px;
-}
-
-.fa {
-  font-size: 25px;
-}
-
-.checked {
-  color: orange;
-}
-
-/* Three column layout */
-.side {
-  float: left;
-  width: 15%;
-  margin-top: 10px;
-}
-
-.middle {
-  float: left;
-  width: 70%;
-  margin-top: 10px;
-}
-
-/* Place text to the right */
-.right {
-  text-align: right;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* The bar container */
-.bar-container {
-  width: 100%;
-
-  text-align: center;
-  color: rgb(28, 28, 28);
-
-}
-
-/* Individual bars */
-.bar-5 {width: 60%; height: 18px; background-color: #04AA6D;}
-.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
-.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
-.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
-.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
-
-/* Responsive layout - make the columns stack on top of each other instead of next to each other */
-@media (max-width: 400px)  {
-  .side, .middle {
-    width: 100%;
-  }
-  /* Hide the right column on small screens */
-  .right {
-    display: none;
-  }
-
-
-
- button#hire-me-button.btncontainer{
-	padding: 14px ;
-	color: #ff9800;
-
-
- }
-
-
-
-
- /* Individual bars */
-.bar-5 {width: 60%; height: 18px; background-color: #04AA6D;}
-.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
-.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
-.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
-.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
-
-/* Responsive layout - make the columns stack on top of each other instead of next to each other */
-@media (max-width: 400px)  {
-  .side, .middle {
-    width: 100%;
-  }
-  /* Hide the right column on small screens */
-  .right {
-    display: none;
-  }
-
-
-
- button#hire-me-button.btncontainer{
-	padding: 14px ;
-	color: #ff9800;
-
-
- }
-
- /* Styles for the "Hire Me" button */
-.hire-me-button button {
-	padding: 20px 30px;
-	background-color: #e1d98e;
-	color: #1b1a1a;
-	border-radius: 10%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	justify-self: center;
-	margin: auto;
-	font-size: 16px;
-	cursor: pointer;
-	opacity: 0;
-	margin-top: 1rem;
-
-	animation: fade-in 1s ease forwards, shake 0.5s infinite;
-}
-
-@keyframes fade-in {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-@keyframes shake {
-	0% {
-		transform: translateX(0);
-	}
-	25% {
-		transform: translateX(5px);
-	}
-	50% {
-		transform: translateX(-5px);
-	}
-	75% {
-		transform: translateX(-5px);
-	}
-	100% {
-		transform: translateX(0);
-	}
-
-}
 
 /* Zoom-in animation */
 @keyframes zoomIn {
@@ -987,4 +758,4 @@ nav ul {
   transform: scale(1.05); /* Zoom in on hover */
 }
 
-
+}

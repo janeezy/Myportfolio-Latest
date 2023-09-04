@@ -1,4 +1,4 @@
-/* Zoom-in animation */
+
 /* Zoom-in animation */
 @keyframes zoomIn {
   from {
@@ -31,6 +31,8 @@
   justify-content: center;
   align-items: stretch;
   margin-bottom: 30px ;
+
+
 }
 
 .article-card {
@@ -52,10 +54,13 @@
 
 
 h2 .articles-title {
-  margin-top: 30px ;
+  margin-top: 40px ;
+  margin-bottom: 30px;
+
 }
 
 
 h2{
   margin-top: 30px ;
+  margin-bottom: 30px;
 }

@@ -4,11 +4,12 @@
 const burger = document.querySelector('#burger-menu');
 const ul = document.querySelector('nav ul');
 const navLink = document.querySelectorAll( '.nav-link' );
-const burgerMenu = document.getElementById('burger-menu');
-const navList = document.querySelector('.navigation');
+const burgerMenu = document.getElementById("burger-menu");
+const navList = document.querySelector( ".navigation" );
+
 
 burgerMenu.addEventListener('click', () => {
-  navList.classList.toggle('active');
+ navList.classList.toggle("active");
 });
 
 
@@ -16,6 +17,9 @@ burgerMenu.addEventListener('click', () => {
 function toggleMobileMenu() {
 	ul.classList.toggle('close');
 }
+
+
+
 
 
 // Show the burger menu on mobile devices
