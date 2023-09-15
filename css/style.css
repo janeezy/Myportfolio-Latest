@@ -636,6 +636,14 @@ nav ul {
 
 		}
 
+	/*changes reflects on screen with a
+		width of 720px and below*/
+
+	ul.navigation {
+
+		display: contents;
+
+	}
 
 	nav {
 		padding: 1.5rem 1rem;
@@ -652,8 +660,7 @@ nav ul {
 		flex-direction: column;
 		position: fixed;
 		right: -6%;
-		bottom: 10%;
-
+		bottom: 20%;
 	}
 	.socicon {
 		width: 1.5rem;
@@ -666,7 +673,7 @@ nav ul {
 	}
 
 	.hero {
-		margin-top: 4rem;
+		margin-top: 2rem;
 		flex-direction: column;
 		gap: 0;
 	}
@@ -697,7 +704,7 @@ nav ul {
 	}
 
 	.icon {
-		width: 5.9rem;
+		width: 5.875rem;
 		height: 5.25rem;
 	}
 	.projects-container {
