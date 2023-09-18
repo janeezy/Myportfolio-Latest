@@ -12,13 +12,14 @@
   margin-top: 30px;
   padding: 20px;
 
+
 }
 
 .certification-card {
   margin-top: 10px;
   width: 300px;
   height: 200px;
-  background-color: #9dad4369;
+  background-color: rgba(174, 187, 112, 0.675);
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
@@ -27,7 +28,7 @@
 
 .certification-card:hover {
   transform: rotateY(16deg) scale(1.1);
-  background-color: rgb(175, 187, 112);
+  background-color: rgb(112, 158, 187);
 
   cursor: pointer;
   text-align: center;
@@ -48,6 +49,7 @@
   margin: 0 auto;
   overflow: hidden;
   margin-bottom: 10px;
+
 }
 
 
@@ -55,6 +57,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
 }
 
 .zoomable {

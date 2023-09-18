@@ -1,6 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Nabla&display=swap');
 
 /* Variables */
+@keyframes colorChange {
+
+  0% {
+    background-color: #D7D7AA; /* Initial color */
+  }
+  25% {
+    background-color: #AAB3D7; /* Second color */
+  }
+  50% {
+    background-color: #D7AAD7; /* Third color */
+  }
+  75% {
+    background-color: #D7BFAA; /* Fourth color */
+  }
+  100% {
+    background-color: #D7D7AA; /* Back to initial color */
+  }
+}
+
+/* Apply the animation to your element */
+.element-to-animate {
+  animation: colorChange 5s infinite; /* Adjust the duration as needed */
+}
+
+body{
+	background-color: #0a64ea36;
+}
+
 
 * {
 	margin: 0%;
@@ -14,105 +43,40 @@
 		cursor: default;
 		background-size: cover;
 		position: absolute;
-		background-color: white;
-		box-shadow: #193f7c;
+		background-color: #D0D6A2;
+		box-shadow:  0px 4px 6px rgba(0, 0, 0, 0.672);
 
 	}
 }
 
 
 :root {
-	--font-family: 'Roboto', sans-serf;
-	--normal-font: 400;
+	--font-family: 'Roboto',  'Anton', 'Nabla', sans-serif  cursive;
+	--normal-font: 600;
 	--bold-font: 700;
 	--bolder-font: 900;
-	--bg-color: #596408;
-	--primary-color: #0f0f0f;
-	--secondary-color: #9a360b;
-	--primary-shadow: #0a20cb;
-	--secondary-shadow: #596408;
+	--bg-color: #a5703b;
+	--primary-color: #3a466f;
+	--secondary-color: #0d0727;
+	--primary-shadow: #142bd5;
+	--secondary-shadow: #0f0f0f;
 	--bottom-margin: 0.5rem;
 	--bottom-margin-2: 1rem;
 	--line-height: 1.7rem;
 	--transition: 0.3s;
 }
-/* Variables end */
 
-.dark-mode {
-	background-color: #D7D7AA   /* Dark background color */
-; /* Dark background color */
-	color: #333905; /* Dark text color */
-	box-shadow: #0f0fbe46;
-
-}
-
-.toggle-container {
-	position: fixed;
-	top: 80px;
-	left: 20px;
-	z-index: 9999;
-}
-
-.toggle {
-	display: none;
-
-}
-
-.toggle-label {
-	display: block;
-	width: 40px;
-	height: 20px;
-   color: #ece8e87b; /* Dark text color */
-;
-	border-radius: 10px;
-	background-color: #8c8888; /* Light toggle color */
-	cursor: pointer;
-	transition: background-color 0.3s;
-}
-
-.toggle:checked + .toggle-label {
-	background-color: hsla(0, 2%, 25%, 0.927);
-	/* Dark toggle color */
-	color: #c9c2c2;
-
-}
-
-.toggle-label::after {
-	content: '';
-	display: block;
-	width: 16px;
-	height: 16px;
-	color: rgb(125, 123, 123);
-	border-radius: 50%;
-	background-color: #d7c379; /* Light toggle knob color */
-	margin-left: 4px;
-	margin-top: 2px;
-	box-shadow: 0 2px 4px rgba(230, 225, 225, 0.15);
-	transition: margin-left 0.3s, background-color 0.3s;
-}
-
-.toggle:checked + .toggle-label::after {
-	margin-left: 20px;
-	color: rgb(15, 13, 13);
-	background-color: #000000; /* Dark toggle knob color */
-}
 
 /* logo styling */
 .logo1 :hover {
 	cursor: pointer;
 	color: #e39607;
+
 }
-.logo2 {
-	width: 100%;
-	position: static;
-	border-radius: 0%;
-	box-sizing: border-box;
-	padding: 1px;
-	margin-top: 0;
-}
+
 /* logo styling */
 .checkout-link {
-	color: #a17a69;
+	color: #385a98;
 }
 
 #h1-tag::first-letter {
@@ -121,7 +85,12 @@
 
 #h1-tag ::shadow {
 	color: rgb(197, 195, 192);
+	margin-left: 40px ;
 
+}
+h1#h1-tag.logo1{
+	margin-left: 10px ;
+	margin-top: 5px;
 }
 /* paragraph styling */
 p {
@@ -200,6 +169,8 @@ nav {
 	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
+
+
 nav h1 {
 	color: var(--primary-color);
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
@@ -257,6 +228,7 @@ img {
 
 section#about.hero {
 	margin: auto;
+
 }
 
 .logo2 {
@@ -296,6 +268,7 @@ section#about.hero {
 	width: 37.5rem;
 	background-color: #d2a40d35;
 	box-shadow: #bcad76;
+
 }
 
 .bio {
@@ -376,12 +349,12 @@ section#about.hero {
 }
 .icon-card {
 	/*background-color: #fff;*/
-	background-color: #b8b12e5c;
+	background-color: #b8b12e9f;
 	border-radius: 11px;
 	box-shadow: 0 3px 10px var(--secondary-shadow);
 	padding: 20px;
 	margin: 10px;
-	color: #141414;
+	color: #3399b6;
 }
 
 
@@ -391,7 +364,7 @@ section#about.hero {
 	margin-top: 2rem;
 	box-sizing: border-box;
 	border-radius: 15px;
-	border: #bcad76;
+	border: #6d83ca;
 
 }
 
@@ -406,7 +379,7 @@ section#about.hero {
 	align-items: center;
 	justify-content: center;
 	box-sizing: border-box;
-	box-shadow: #d1c7a1;
+	box-shadow: #6d83ca;
 }
 
 /* project title */
@@ -414,6 +387,8 @@ section#about.hero {
 	color: #a17a69;
 	text-align: center;
 	display: grid;
+	margin-top: 10px;
+	font-size: larger;
 }
 .projects-title {
 	text-align: center;
@@ -428,7 +403,7 @@ section#about.hero {
 	height: 24.875rem;
 	margin: 0%;
 	padding: 1rem;
-	box-shadow: #bcad7634;
+	box-shadow: #38497834;
 	box-sizing: border-box;
 	viewport-fit: contain;
 	position: static;
@@ -441,8 +416,8 @@ div.project-container .project-card {
 
 	max-width: 27rem;
 	min-height: 29rem;
-	box-shadow: #c8ad67;
-	background-color: white;
+	box-shadow: #0e0e0e;
+	background-color: #6d83ca;
 }
 /* adding box shadow to projects  */
 
@@ -470,7 +445,7 @@ div.project-container .project-card {
 	padding: 15px;
 	margin: 10px;
 	box-sizing: border-box;
-    background-color: #e5e3b867;
+    background-color: #c3e05859;
 ;
 	position: relative;
 
@@ -599,8 +574,27 @@ footer {
 }
 /* creating responsesiveness */
 @media screen and (max-width: 620px)  {
+	.navigation {
+    display: none; /* Hide the navigation links by default on small screens */
+  }
 
 
+.burger-menu {
+    color: var(--primary-color); /* Set the color as needed */
+    font-size: 2rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: show; /* Display the burger menu icon */
+  }
+
+  .burger-menu .bars {
+    font-size: 2rem; /* Adjust the icon size */
+  }
 
 	html {
 
@@ -609,7 +603,7 @@ footer {
 nav ul {
 		position: fixed;
 		background-color: var(--bg-color);
-		flex-direction: column;
+		flex-direction: column-reverse;
 		top: 86px;
 		left: 10%;
 		width: 80%;
@@ -620,7 +614,18 @@ nav ul {
 	nav ul li {
 		margin: 8px;
 	}
-
+    .burger-menu {
+    color: var(--primary-color); /* Set the color as needed */
+    font-size: 2rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: block; /* Display the burger menu icon */
+  }
 
 	.burger-menu {
 		display: block;
@@ -632,8 +637,13 @@ nav ul {
 		right: 20px;
 
 	}
+	.text-animation {
+    font-size: 16px;
+ }
 
-
+.container{
+	flex-direction: column-reverse;
+}
 		}
 
 	/*changes reflects on screen with a
@@ -647,7 +657,8 @@ nav ul {
 
 	nav {
 		padding: 1.5rem 1rem;
-		flex-wrap: wrap !important;
+		/* flex-wrap: wrap !important; */
+		align-content: flex-start
 
 	}
 
@@ -766,3 +777,44 @@ nav ul {
 }
 
 }
+
+
+/* Add this CSS to your stylesheet or inside a <style> tag in your HTML */
+
+.contact-buttons {
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#0057b3a8; /* Choose your desired background color */
+    color: #e9e1e1; /* Text color */
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    margin: 0 10px; /* Adjust the margin as needed */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+
+}
+
+.contact-btn:hover {
+    background-color: #0056b3; /* Change the background color on hover */
+}
+
+
+#text-animation {
+  font-size: 54px;
+  font-weight: bold;
+  text-align: center;
+  color: #0573f0d1;
+  opacity: 0; /* Start with text hidden */
+  animation: textAnimation 2s ease-in-out infinite; /* Adjust the animation duration */
+  margin-top: 14px;
+}
+
+@keyframes textAnimation {
+  0%, 100% { opacity: 0; } /* Text is invisible at the start and end */
+  50% { opacity: 1; } /* Text is visible in the middle */
+}
+

@@ -13,11 +13,17 @@
 		<!-- logo link -->
 		<title>JD|FrontEnd Developer</title>
 		<!-- css link -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-		<link rel="stylesheet" href="./css/certifications.css">
-		<link rel ="stylesheet" href="css/projectanimate.css">
-		<link rel ="stylesheet" href ="css/articles.css">
-		<link rel="stylesheet"  href="css/services.css">
+		<link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="./css/certifications.css">
+    <link rel="stylesheet" href="css/projectanimate.css">
+    <link rel="stylesheet" href="css/articles.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/textanimations.css">
+    <link rel="stylesheet" href="./css/skillsanimations.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/6.0.0-beta.14/css/ionicons.min.css">
 
 
 		<link
@@ -38,31 +44,13 @@
 			rel="stylesheet" />
 		<!-- other links  -->
 
-		<!-- favicon.ico -->
-		<link
-			rel="shortcut icon"
-			href="favicon_io/favicon.ico"
-			type="image/x-icon" />
-			<link rel="stylesheet" href="./css/animation.css">
-			<link rel="stylesheet" href="./css/textanimations.css">
-			<link rel="stylesheet" href="./css/skillsanimations.css">
+
 	</head>
 	<!-- header -->
 
 	<body>
 
-		<div class="toggle-container">
-			<input
-				type="checkbox"
-				id="toggle"
-				class="toggle"
-				onchange="toggleMode()" />
-			<label
-				for="toggle"
-				class="toggle-label"></label>
-		</div>
 		<div class="container">
-
 
 
 
@@ -76,79 +64,42 @@
 
 				</a>
 				<!-- navigation section -->
-				<nav>
+			<nav>
+  <button class="burger-menu" id="burger-menu">
+    <ion-icon class="bars" name="menu-outline"></ion-icon>
+  </button>
+
+  <ul class="navigation">
+    <li>
+      <a href="#about" class="nav-link">About</a>
+    </li>
+    <li>
+      <a href="#skills" class="nav-link">Skills</a>
+    </li>
+    <li>
+      <a href="#projects" class="nav-link">Projects</a>
+    </li>
+    <li>
+      <a href="#contact" class="nav-link">Contact</a>
+    </li>
+    <li>
+      <a href="https://janeduru.tiiny.site" class="nav-link">Resume</a>
+    </li>
+  </ul>
+</nav>
 
 
-				<ul class="navigation">
-					<li>
-						<a
-							href="#about"
-							class="nav-link"
-							>About</a
-						>
-					</li>
-					<li>
-						<a
-							href="#skills"
-							class="nav-link"
-							>Skills</a
-						>
-					</li>
-
-					<li>
-						<a
-							href="#projects"
-							class="nav-link"
-							>Projects</a
-						>
-					</li>
-					<li>
-						<a
-							href="#contact"
-							class="nav-link"
-							>Contact</a
-						>
-					</li>
-					<li>
-						<a
-							href="https://janeduru.tiiny.site"
-							class="nav-link"
-							>Resume</a
-						>
-					</li>
-
-
-				</ul>
-				<button
-					class="burger-menu"
-					id="burger-menu">
-
-					<ion-icon
-						class="bars"
-						name="menu-outline"></ion-icon>
-				</button>
-			</nav>
 		</div>
 
-<!-- navigation menu  -->
-		 <span>
-
-			<img
-				class="logo2"
-				src="images/logoJ.png"
-				alt="Jane Duru Front End Developer" />
-
-
-		</span>
-
-
-
+         <div id="text-animation"></div>
 
 
 			<!-- hero section -->
+
 			<section
 				class="hero"
 				id="about">
+
 				<a href="index.html">
 					<img
 						src="icons/img5.png"
@@ -156,6 +107,7 @@
 						loading="lazy"
 						class="hero-img" />
 				</a>
+
 				<div class="bio animate__animated animate__shakeX">
 					<h2 class="bio-title">Professional Profile</h2>
 					<p class="bio-text">
@@ -380,7 +332,7 @@
 					>
 
 				</div>
-				<div class="project-container project-card">
+				 <!-- <div class="project-container project-card">
 					<img
 						class="styling-image"
 						src="images/PigGame.png"
@@ -400,7 +352,7 @@
 						>Check it Out</a
 					>
 				</div>
-			</div>
+			</div> -->
 		</section>
 		<!-- section 2 projects continuation -->
 		<section
@@ -433,7 +385,7 @@
 
 				<!-- body  project  dietnutri-->
 
-				<div class="project-container project-card">
+				<!-- <div class="project-container project-card">
 					<img
 						class="styling-image"
 						src="images/guessnumber.png"
@@ -457,7 +409,7 @@
 						class="project-link"
 						>Check it Out</a
 					>
-				</div>
+				</div> -->
 				<div class="project-container project-card">
 					<img
 						id="style-image2"
@@ -560,7 +512,7 @@
 						>Check it Out</a
 					>
 				</div>
-				<div class="project-container project-card">
+				 <div class="project-container project-card">
 					<img
 						id="style-image2"
 						class="styling-image"
@@ -674,7 +626,7 @@
       <img src="certifications/-diploma tech  2.JPG" alt="Certification 1" class="zoomable">
       <img src="certifications/git.png" alt="Certification 2" class="zoomable">
       <img src="certifications/-diploma tech .JPG" alt="Certification 3" class="zoomable">
-      <img src="certifications/student_certificate_51021847_ed38cb68640755343b08157c919e88b9_1691954225.pdf" alt="Certification 4" class="zoomable">
+
     </div>
 	</div>
 
@@ -746,8 +698,17 @@
 
 
 <!-- body contact me section  -->
+<section
+			class="contact"
+			id="contact">
+<div class="contact-buttons">
+        <a href="https://www.linkedin.com/in/janeezy/" class="contact-btn">LinkedIn</a>
+		<a href="https://api.whatsapp.com/send?phone=351920009647" class="contact-btn">Whatsapp</a>
+    </div>
+	</section>
 
 		<section
+
 
 			class="contact"
 			id="contact">
@@ -903,8 +864,7 @@
 		<!-- creating responsesiveness -->
 		<!-- adding new lines  -->
 
-		<!-- linking script.js -->
-		<script src="./script.js/app2.js" defer></script>
+		<!-- Scripts at the end of the body for faster loading -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js" defer></script>
     <script src="./script.js/animation.js" defer></script>
     <script src="./script.js/textanimations.js" defer></script>
@@ -913,7 +873,7 @@
     <script src="./script.js/certification.js" defer></script>
     <script src="./script.js/articles.js" defer></script>
     <script src="./script.js/services.js" defer></script>
-
+	<script src="script.js/script.js"></script>
 		 <!-- Add icon library  -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</body>

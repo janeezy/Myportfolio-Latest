@@ -46,7 +46,7 @@ function displayArticles() {
     // Apply zoom-in animation
     setTimeout(() => {
       articleCard.classList.remove('zoom-in');
-    }, 100);
+    }, 1000);
 
     // Apply zoom-out animation after a delay
     setTimeout(() => {
