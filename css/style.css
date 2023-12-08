@@ -1,33 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Nabla&display=swap');
 
-/* Variables */
-@keyframes colorChange {
-
-  0% {
-    background-color: #D7D7AA; /* Initial color */
-  }
-  25% {
-    background-color: #AAB3D7; /* Second color */
-  }
-  50% {
-    background-color: #D7AAD7; /* Third color */
-  }
-  75% {
-    background-color: #D7BFAA; /* Fourth color */
-  }
-  100% {
-    background-color: #D7D7AA; /* Back to initial color */
-  }
-}
-
-/* Apply the animation to your element */
-.element-to-animate {
-  animation: colorChange 5s infinite; /* Adjust the duration as needed */
-}
 
 body{
-	background-color: #0a64ea36;
+	background-color: #8b9ebb36;
 }
 
 
