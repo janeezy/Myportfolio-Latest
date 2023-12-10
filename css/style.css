@@ -240,8 +240,8 @@ section#about.hero {
 	margin: auto;
 }
 .hero img {
-	height: 37.5rem;
-	width: 37.5rem;
+	height: 36.5rem;
+	width: 36.5rem;
 	background-color: #d2a40d35;
 	box-shadow: #bcad76;
 
@@ -348,6 +348,7 @@ section#about.hero {
 	width: 100%;
 	height: 100%;
 	box-sizing: border-box;
+	border-radius: 10px ;
 }
 
 .projects-container {
@@ -780,10 +781,10 @@ nav ul {
 
 
 #text-animation {
-  font-size: 54px;
+  font-size: 34px;
   font-weight: bold;
   text-align: center;
-  color: #0573f0d1;
+  color: #5a34a5d1;
   opacity: 0; /* Start with text hidden */
   animation: textAnimation 2s ease-in-out infinite; /* Adjust the animation duration */
   margin-top: 14px;
