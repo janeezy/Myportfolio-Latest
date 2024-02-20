@@ -3,7 +3,17 @@
 
 
 body{
-	background-color: #8b9ebb36;
+	 background-color: #8b9ebb36;
+color: hsl(204, 94%, 14%);
+font-size: 15px;
+display: inline-block;
+ margin-bottom: 10px;
+background: linear-gradient(
+  120deg,
+  #43e7df 20.69%,
+  #5b4696 50.19%,
+  #a94a5a 79.69%
+);
 
 
 }
@@ -21,7 +31,7 @@ body{
 		cursor: default;
 		background-size: cover;
 		position: absolute;
-		background-color: #D0D6A2;
+		/* background-color: #D0D6A2; */
 		box-shadow:  0px 4px 6px rgba(0, 0, 0, 0.672);
 
 	}
@@ -33,11 +43,11 @@ body{
 	--normal-font: 600;
 	--bold-font: 700;
 	--bolder-font: 900;
-	--bg-color: #a5703b;
-	--primary-color: #3a466f;
-	--secondary-color: #0d0727;
-	--primary-shadow: #142bd5;
-	--secondary-shadow: #0f0f0f;
+	--bg-color: #0e0520;
+	--primary-color:  #000000bf;
+	--secondary-color: #1100ca;
+	--primary-shadow: #0f2ca4;
+	--secondary-shadow: #000000;
 	--bottom-margin: 0.5rem;
 	--bottom-margin-2: 1rem;
 	--line-height: 1.7rem;
@@ -53,16 +63,16 @@ body{
 }
 
 /* logo styling */
-.checkout-link {
-	color: #385a98;
-}
-
+/* .checkout-link { */
+	/* color: #385a98; */
+/* } */
+/*  */
 #h1-tag::first-letter {
 	color: rgb(237, 172, 9);
 }
 
 #h1-tag ::shadow {
-	color: rgb(197, 195, 192);
+	/* color: rgb(197, 195, 192); */
 	margin-left: 40px ;
 
 }
@@ -285,7 +295,7 @@ section#about.hero {
 /* styling section */
 .more-about {
 	padding: 1rem 6rem;
-	color: #052656;
+	/* color: #052656; */
 }
 
 .more-about h2 {
@@ -327,12 +337,12 @@ section#about.hero {
 }
 .icon-card {
 	/*background-color: #fff;*/
-	background-color: #b8b12e9f;
+	/* background-color: #b8b12e9f; */
 	border-radius: 11px;
 	box-shadow: 0 3px 10px var(--secondary-shadow);
 	padding: 20px;
 	margin: 10px;
-	color: #3399b6;
+	/* color: #3399b6; */
 }
 
 
@@ -342,7 +352,7 @@ section#about.hero {
 	margin-top: 2rem;
 	box-sizing: border-box;
 	border-radius: 15px;
-	border: #6d83ca;
+	/* border: #6d83ca; */
 
 }
 
@@ -363,7 +373,7 @@ section#about.hero {
 
 /* project title */
 .project-link {
-	color: #a17a69;
+	/* color: #a17a69; */
 	text-align: center;
 	display: grid;
 	margin-top: 10px;
@@ -384,9 +394,8 @@ section#about.hero {
 	padding: 1rem;
 	box-shadow: #38497834;
 	box-sizing: border-box;
-	viewport-fit: contain;
 	position: static;
-	color: #141414;
+	/* color: #141414; */
 }
 
 /* containers */
